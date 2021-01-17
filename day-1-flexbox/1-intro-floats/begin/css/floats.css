@@ -31,9 +31,32 @@ div img {
 }
 
 /* grid system -- mobile first! */
+.row::after {
+	content:"";
+	display: table;
+	clear: both;
+}
+[class*='col-'] {
+	width: 92%;
+	margin-left: 4%;
+	margin-right:4%;
+	min-height: 1%;
+}
 
-
-/* Mobile Landscape Screen Sizes */
+.col-1-2,
+.col-1-4 {
+	background-color: aqua;
+}
+.col-2 {
+	background-color: red;
+}
+col-3 {
+	background-color: blueviolet;
+}
+.col-4 {
+	background-color: chartreuse;
+}
+ /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: 480px)  {
 
 }
